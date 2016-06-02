@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+opendir(CUR, ".");
+@files = grep(/\.inc$/, readdir(CUR));
+
+foreach $file (@files) {
+	next if $file =~ /^function/;
+	$newfile = $file;
+	$newfile =~ s/inc$/php/;
+	$syscmd = "/bin/cp template.html $newfile";	
+	system($syscmd);
+}
+
+	
