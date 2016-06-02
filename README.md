@@ -1,6 +1,6 @@
 # braysite
 
-This is some PHP code I put together to do the website for Bray Wanderes FC.
+This is some PHP code I put together to do the website for Bray Wanderers FC.
 
 Much of the code could in principle be used for other websites.   However, the code was originally written in 2001 or 2002, in
 PHP, and not done as rigorously as it should have been.    Plus it was written for PHP 3 - so although it works under PHP5,
@@ -12,6 +12,8 @@ The .inc files in the main directory generate the content for specific page.   T
 the same name to template.html.   For example:
 
 news.inc needs news.php to be linked to template.html
+
+(you can bypass this using the mkphpfiles script in the repository).   
 
 template.html contains PHP code to call the .inc file based on what filename it is accessed under.
 
