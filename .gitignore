@@ -31,7 +31,8 @@ wc02/*
 
 # Random crap in main subfolder.
 
-functions.inc
+# functions.inc
+settings.inc
 # Okay that one wasn't crap...
 
 functions.inc,v
@@ -48,7 +49,6 @@ admin/CVS/*
 admin/TODO
 admin/bray-logs.html
 admin/fix
-admin/functions.inc
 admin/images/*
 admin/list.php3
 admin/login.php3

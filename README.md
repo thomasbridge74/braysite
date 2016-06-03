@@ -17,8 +17,8 @@ news.inc needs news.php to be linked to template.html
 
 template.html contains PHP code to call the .inc file based on what filename it is accessed under.
 
-You need access to a MySQL Database.    Rename functions-SAMPLE.inc to functions.inc and add the MySQL server details into the 
-file to connect.
+You need access to a MySQL Database.    Rename settings-SAMPLE.inc to settings.inc and add the MySQL server details into the 
+file to connect.   You will need to copy settings.inc into the admin folder as well.
 
 The embedded code uses the <? short version to embed PHP code.   This may need a tweak to the php.ini file to get this to 
 work properly

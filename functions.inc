@@ -2,12 +2,8 @@
 #
 # Variable definitions
 #
-$thisseason = "2015";
-$dbuser = "";
-$dbpass = "";
-# $dbserver = "88.198.59.214";
-$dbserver = "";
-$dbname = "db_name";
+
+include("settings.inc");
 
 function todays_date() {
 	return date("Y-m-d");
@@ -36,7 +32,11 @@ function print_date_menu ($date, $variable) {
 	}
 	print "</select>";
 	print "<select name=${variable}year>\n";
-	for($i = 1985; $i <= 2015; $i++) {
+	#
+	# start at 1985 as that is when Bray Wanderers entered the LOI.
+	# and yes I know hardcoding this was a bad idea.
+	#
+	for($i = 1985; $i <= 2025; $i++) {
 		if($i == $year) { 
 			print "<option selected>";
 		} else {
