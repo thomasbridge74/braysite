@@ -8,7 +8,6 @@
 *.xls
 *.tif
 *.png
-*.gif
 *.ppt
 *.pdf
 
@@ -19,7 +18,6 @@ Player photos/*
 Shop/*
 braytexts/*
 image/*
-img/*
 inc/*
 server_info/*
 texts/*
