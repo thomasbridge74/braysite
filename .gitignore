@@ -1,56 +1,9 @@
-# File extensions
+# Development setup.
 
-# Note we ignored case here:
-# git config core.ignorecase true
+venv/
+db.sqlite3
+.env
+.idea
+__pycache__
 
-*.jpg
-*.php
-*.xls
-*.tif
-*.png
-*.ppt
-*.pdf
-
-# Folders below
-
-FAI cup final 1990/*
-Player photos/*
-Shop/*
-braytexts/*
-image/*
-inc/*
-server_info/*
-texts/*
-tmp/*
-trash/*
-under21s/*
-video/*
-wc02/*
-
-# Random crap in main subfolder.
-
-# functions.inc
-settings.inc
-# Okay that one wasn't crap...
-
-functions.inc,v
-index-new.inc
-new.html
-template.html,vfunctions.inc
-functions.inc,v
-index-new.inc
-new.html
-template.html,v
-# Specific stuff for the admin folder
-
-admin/CVS/*
-admin/TODO
-admin/bray-logs.html
-admin/fix
-admin/images/*
-admin/list.php3
-admin/login.php3
-admin/mysql_query
-admin/old/*
-admin/reports/*
-admin/webalizer/*
+s3-publish

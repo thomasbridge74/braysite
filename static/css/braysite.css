@@ -1,6 +1,6 @@
 body {
-    background-color: #ffffff;
-    background-image: url("/static/img/bg.gif");
+    background-color: rgb(18,135,97);
+    /*display: flex;*/
 }
 
 table {
@@ -12,10 +12,14 @@ table {
 
 table.w169 {
     width: 169px;
+    display: inline;
 }
 
-img {
+img.topbar {
     border: 0;
+    padding: 0;
+    float: left;
+
 }
 
 tr {
@@ -40,7 +44,7 @@ td.cols3 {
 td.w169 {
     width: 169px;
     text-align: left;
-    background-image: url("/static/img/nav_r11_c1.gif");
+    /**/
 }
 
 td.w163 {
@@ -100,4 +104,74 @@ a {
 
 a:hover {
     color: #ff9933;
+}
+
+.header_line {
+    margin: 0;
+    border-width: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 18px;
+    width: 800px;
+}
+
+nav {
+    display: block;
+}
+
+#mainsection {
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 489px;
+    padding-left: 10px;
+    border-right-width: 6px;
+    border-left-width: 6px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+.header_line {
+    display: flex;
+}
+
+#nav_andmain {
+    display: flex;
+}
+.bray-nav-icon {
+    /*border-radius: 10%;*/
+    font-family: serif;
+    background-color: black;
+    width: 126px;
+    height: 24px;
+    font-size: 18px;
+    text-align: right;
+    margin-left: 11px;
+    /*margin-right: 10px;*/
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 4px 0 0;
+}
+
+.bray-nav-icon a {
+    border: 1px;
+    font-size: 15px;
+    color: grey;
+    text-decoration: none;
+    font-family: Verdana, serif;
+}
+
+.bray-nav-icon-last{
+    border-bottom-left-radius: 20px ;
+}
+
+.bray-nav-icon a:hover {
+    color: whitesmoke;
 }
