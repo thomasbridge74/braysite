@@ -1,3 +1,7 @@
+Update: November 22nd:
+
+The far more interesting stuff in here is currently on the django-tdd branch.
+
 # braysite
 
 This is some PHP code I put together to do the website for Bray Wanderers FC.
