@@ -1,5 +1,7 @@
 name: run-python-tests
 on: [push]
+env:
+  SECRET_KEY: ahriNgeeK7Peib9eePhooNen5aoqu2aing0Geesh2xoo0choom
 jobs:
   std_tests:
     runs-on: ubuntu-latest
