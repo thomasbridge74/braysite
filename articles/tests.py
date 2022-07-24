@@ -12,7 +12,7 @@ class ArticleTestCase(TestCase):
         )
         self.article = Article.objects.create(
             title="Entry Posting 1",
-            published_date='2010-01-01',
+            published_date="2010-01-01",
             body="Bart Simpson was here",
             columnist=self.columnist,
         )

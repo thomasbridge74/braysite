@@ -16,17 +16,19 @@ class PlayerTestCase(TestCase):
 
 class SquadEntryTestCase(TestCase):
     def setUp(self):
-        self.squad = Squad.objects.create(
-            name="Springfield Elementary softball team"
-        )
+        self.squad = Squad.objects.create(name="Springfield Elementary softball team")
         self.player = Player.objects.create(
             firstname="Bart",
             surname="Simpson",
             current=True,
             story="A boy from small town America",
         )
-        self.squadentry = SquadEntry.objects.create(squad=self.squad, player=self.player)
+        self.squadentry = SquadEntry.objects.create(
+            squad=self.squad, player=self.player
+        )
 
     def test_basic_setup(self):
-        self.assertEqual(self.squadentry.squad.name, "Springfield Elementary softball team")
+        self.assertEqual(
+            self.squadentry.squad.name, "Springfield Elementary softball team"
+        )
         self.assertEqual(str(self.squadentry.player), "Bart Simpson")

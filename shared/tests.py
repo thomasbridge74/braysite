@@ -3,14 +3,15 @@ from shared.models import Columnist, Squad
 
 
 class ColumnistTestCase(TestCase):
-
     def setUp(self):
         pass
 
     def test_columnist_name(self):
-        columnist = Columnist.objects.create(name="Headmaster's Thoughts",
-                                             author="Principal Skinner",
-                                             description="Updates from Springfield Elementary")
+        columnist = Columnist.objects.create(
+            name="Headmaster's Thoughts",
+            author="Principal Skinner",
+            description="Updates from Springfield Elementary",
+        )
         self.assertEqual(str(columnist), "Principal Skinner")
 
 

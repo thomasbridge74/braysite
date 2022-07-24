@@ -10,7 +10,7 @@ class TestNewsArticles(TestCase):
             publish_date=now().date(),
             headline="Bray win the FAI Cup",
             details="Jayo scored and the cup came home",
-            category="club"
+            category="club",
         )
         self.assertEqual(str(report), "Bray win the FAI Cup")
         # There is a race condition in this test.   Running at midnight
@@ -22,7 +22,7 @@ class TestNewsArticles(TestCase):
         report = NewsReport.objects.create(
             headline="Bray win the FAI Cup",
             details="Jayo scored and the cup came home",
-            category="club"
+            category="club",
         )
         self.assertEqual(report.publish_date, date.today())
 
@@ -31,8 +31,8 @@ class TestNewsArticles(TestCase):
             publish_date=date.today(),
             headline="Bray win the FAI Cup",
             details="Jayo scored and the cup came home",
-            category="club"
+            category="club",
         )
         self.assertEqual(report.expire, None)
-        report.expire = date(2020,3,1)
+        report.expire = date(2020, 3, 1)
         self.assertEqual(report.expire, date(2020, 3, 1))

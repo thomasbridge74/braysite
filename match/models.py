@@ -52,7 +52,7 @@ class Match(models.Model):
             return False
 
     def __str__(self):
-        return f"{str(self.date)} {str(self.opponents)}, {str(self.season)}, {str(self.competition)}"
+        return f"{str(self.date)} {str(self.opponents)}, {str(self.season)}, {str(self.competition)}"  # noqa: E501
 
 
 class Report(models.Model):
@@ -60,5 +60,5 @@ class Report(models.Model):
     columnist = models.ForeignKey(Columnist, on_delete=models.PROTECT)
     body = models.TextField()
 
-
-
+    def __str__(self):
+        return f"{str(self.game)} {str(self.columnist)}"
