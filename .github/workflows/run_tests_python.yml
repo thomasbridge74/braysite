@@ -41,4 +41,4 @@ jobs:
         if: steps.cache-deps.outputs.cache-hit != 'true'
 
       - name: Run tests
-        run: python manage.py test
+        run: poetry run ./manage.py test
